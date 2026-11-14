@@ -24,7 +24,7 @@ Programs are **444 Hz**, **Unity**, and **432 Hz**. Unity is no shift. 432 Hz is
 
 ## Where it runs
 
-On Akai Professional MPC standalone it is a master insert, for MPC OS 3.10.1 and later. The package is installed with Open MPC. Save the project before installing. The installer restarts the MPC application.
+On Akai Professional MPC standalone it is a master insert, for MPC OS 3.10.1 and later. Copy the plugin folder into `VST2 Plugins` on the internal drive, an SD card, or a USB drive, with External Plugin Support turned on. The install steps are in Download.
 
 On macOS it is a VST® 3 plug-in, an Audio Unit, and an Audio Unit app extension (AUv3). The minimum system is macOS 12. The manufacturer code is Wylt and the plug-in code is WY1S.
 
@@ -35,6 +35,16 @@ Manufacturer and plug-in name are both Wavelight.
 [Wavelight 1.0.0 for macOS](https://github.com/asearan/Wavelight/releases/download/v1.0.0/Wavelight-1.0.0-macOS.pkg) is a signed installer for Apple silicon. It needs macOS 12 or later. The installer adds the VST® 3 plug-in, the Audio Unit, and the Wavelight app. Open the app once so macOS registers the Audio Unit app extension.
 
 The package is signed with an Apple Developer ID certificate. This build is not notarized, so the first time you open the downloaded installer, macOS asks you to approve it.
+
+[Wavelight 1.0.0 for MPC](https://github.com/asearan/Wavelight/releases/download/v1.0.0/wavelight-1.0.0-mpc.zip) is for MPC OS 3.10.1 and later, the firmware that loads third-party plugins from a `VST2 Plugins` folder. The zip contains the 32-bit and 64-bit builds and an `INSTALL.txt`.
+
+1. Update the MPC to 3.10.1 or later. Preferences, Info shows the version.
+2. Open Preferences, Enhancements. Turn on Enable Enhancements and External Plugin Support. Wait a few seconds, then restart.
+3. Unzip the download and copy the folder `Wavelight - VST - Wavelight` into a folder named exactly `VST2 Plugins` at the top of the internal drive, an SD card, or a USB drive.
+4. Keep the folder name as it is. It should contain `plugin.json`, `version.xml`, `Plugin Skins`, and `VST`.
+5. Restart the MPC if Wavelight does not appear, then add it as an insert under External Plugins.
+
+Save the project first. A plugin runs inside the MPC software, so a fault can freeze or restart the machine. Akai Professional and inMusic do not support third-party plugins.
 
 ## Trademarks
 
