@@ -30,6 +30,12 @@ On macOS it is a VST® 3 plug-in, an Audio Unit, and an Audio Unit app extension
 
 Manufacturer and plug-in name are both Wavelight.
 
+## Download
+
+[Wavelight 1.0.0 for macOS](https://github.com/asearan/Wavelight/releases/download/v1.0.0/Wavelight-1.0.0-macOS.pkg) is a signed installer for Apple silicon. It needs macOS 12 or later. The installer adds the VST® 3 plug-in, the Audio Unit, and the Wavelight app. Open the app once so macOS registers the Audio Unit app extension.
+
+The package is signed with an Apple Developer ID certificate. This build is not notarized, so the first time you open the downloaded installer, macOS asks you to approve it.
+
 ## Trademarks
 
 Wavelight is an independent product. The names below identify the instruments and formats it runs on. The header mark on the screen is the Retroloop logo.
